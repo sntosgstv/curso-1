@@ -1,2 +1,177 @@
-body{
-    color:darkmagenta
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #6E859F; /* cor-principal */
+    background-color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+h1, h2, h5 {
+    color: #284260; /* cor-secundaria */
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.destaque {
+    font-weight: 700;
+    color: #C92BFC; /* cor-destaque */
+    margin-top: 10px;
+}
+
+.selos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.selo {
+    background-color: #6E859F; /* cor-principal */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.cartao {
+    flex: 1 1 calc(33% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao img {
+    width: 100%;
+    height: auto;
+}
+
+.corpo-cartao {
+    padding: 15px;
+}
+
+.botao-link {
+    color: #C92BFC; /* cor-destaque */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.botao-link:hover {
+    color: #6E859F; /* cor-principal */
+}
+
+a {
+    text-decoration: none;
+    color: #6E859F; /* cor-principal */
+}
+
+a:hover {
+    color: #C92BFC; /* cor-destaque */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.conteudo-modal {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+}
+
+.imagem-cheia {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.rodape-modal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column;
+    }
+
+    .cartao {
+        flex: 1 1 100%;
+    }
+}

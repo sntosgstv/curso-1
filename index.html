@@ -1,56 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portifolio do gustavo</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio do gustavo</title>
 </head>
+
 <body>
-    <header>
-        <p class="destaque">eu sou gustavo</p>
-        <h1>eu estudo programação</h1>
-        <p>meu nome é gustavo tenho 15 anos e esstudp no colegio estadual de marmeleiro, adoro minha casa e minha familia</p>
+    <header class="conteiner centralizado">
+        <img src="202312291325-main.cropped_1703834929.jpg" alt="avatar da Fernanda" class="avatar">
+        <p class="destaque">Eu sou o Gustavo</p>
+        <h1>Eu nao sei Programação</h1>
+        <p>Sou Engenheira de Computação e Pedagoga. Ensino pensamento computacional para estudantes do Ensino Fundamental e Médio. Ensino sobre pensamento computacional usando HTML, CSS e JavaScript. Veja os projetos que já desenvolvi!</p>
+        <p>Minhas habilidades</p>
         <div class="selos">
-            
-  
-<div class="selos">
-<span class="selo">HTML</span>
-<span class="selo">CSS</span>
-<span class="selo">Javascript</span>
-<span class="selo">Scratch</span>
-</div>
-</header>
-<main class="conteiner">
-    <h2>Meus projetos</h2>
-    <div class="linha">
-    <!-- Projeto 1 -->
-    <div class="cartao">
-    <img src="img/projeto-1.png" alt="Imagem do projeto de biblioteca virtual">
-    <div class="corpo-cartao">
-    <h5>Minha Biblioteca: Uma Webpage Personalizada</h5>
-    <p>Este projeto é uma página web que apresenta uma lista dos meus livros favoritos...</p>
-    <button class="botao-link" onclick="abrirModal('modal1')">Veja o projeto</button>
-    </div>
-    </div>
-    <!-- Projeto 2 -->
-    <div class="cartao">
-    <img src="img/projeto-2.png" alt="Imagem do projeto de IA interativa">
-    <div class="corpo-cartao">
-    <h5>Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência Artificial</h5>
-    <p>Este projeto é um jogo interativo baseado em navegador que explora o impacto e as implicações da IA...</p>
-    <button class="botao-link" onclick="abrirModal('modal2')">Veja o projeto</button>
-    </div>
-    </div>
-    <!-- Projeto 3 -->
-    <div class="cartao">
-    <img src="img/projeto-3.png" alt="Imagem do projeto de astronomia com Scratch">
-    <div class="corpo-cartao">
-    <h5>Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch</h5>
-    <p>Este projeto Scratch cria uma experiência interativa educativa sobre astronomia...</p>
-    <button class="botao-link" onclick="abrirModal('modal3')">Veja o projeto</button>
-    </div>
-    </div>
-    </div>
+            <span class="selo">HTML</span>
+            <span class="selo">CSS</span>
+            <span class="selo">JavaScript</span>
+            <span class="selo">Scratch</span>
+        </div>
+    </header>
+
+    <main class="conteiner">
+        <h2>Meus projetos</h2>
+        <div class="linha">
+            <!-- Projeto 1 -->
+            <div class="cartao">
+                <img src="img/projeto-1.png" alt="Imagem do projeto de biblioteca virtual">
+                <div class="corpo-cartao">
+                    <h5>Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <p>Este projeto é uma página web que apresenta uma lista dos meus livros favoritos...</p>
+                    <button class="botao-link" onclick="abrirModal('modal1')">Veja o projeto</button>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="cartao">
+                <img src="img/projeto-2.png" alt="Imagem do projeto de IA interativa">
+                <div class="corpo-cartao">
+                    <h5>Decidindo o Futuro: Uma Jornada Interativa sobre a Inteligência Artificial</h5>
+                    <p>Este projeto é um jogo interativo baseado em navegador que explora o impacto e as implicações da IA...</p>
+                    <button class="botao-link" onclick="abrirModal('modal2')">Veja o projeto</button>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="cartao">
+                <img src="img/projeto-3.png" alt="Imagem do projeto de astronomia com Scratch">
+                <div class="corpo-cartao">
+                    <h5>Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch</h5>
+                    <p>Este projeto Scratch cria uma experiência interativa educativa sobre astronomia...</p>
+                    <button class="botao-link" onclick="abrirModal('modal3')">Veja o projeto</button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <!-- Modais -->
+    <div id="modal1" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+            <h5>Minha Biblioteca: Uma Webpage Personalizada</h5>
+            <p>O projeto é uma página web criada com HTML e CSS...</p>
+            <img src="img/projeto-1.png" class="imagem-cheia">
+            <div class="rodape-modal">
+                <a href="https://femascheti.github.io/minhas-leituras/">Ver projeto ao vivo</a>
+                <a href="https://github.com/femascheti/minhas-leituras">Ver código do projeto</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+            <h5>Decidindo o Futuro</h5>
+            <p>O projeto consiste em uma aplicação web interativa...</p>
+            <img src="img/projeto-2.png" class="imagem-cheia">
+            <div class="rodape-modal">
+                <a href="https://femascheti.github.io/tecnicas-computacionais-refletindo-sobre-ia/">Ver projeto ao vivo</a>
+                <a href="https://github.com/femascheti/tecnicas-computacionais-refletindo-sobre-ia">Ver código do projeto</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+            <h5>Explorando o Universo</h5>
+            <p>O projeto é uma aplicação educativa interativa focada em astronomia...</p>
+            <img src="img/projeto-3.png" class="imagem-cheia">
+            <div class="rodape-modal">
+                <a href="https://scratch.mit.edu/projects/951732825/">Ver projeto ao vivo</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="conteiner">
+        <h2>Entre em contato</h2>
+        <div class="redes">
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p>© Copyright 2024. Produzido por Fernanda Mascheti</p>
+    </footer>
+
+    <script>
+        function abrirModal(id) {
+            document.getElementById(id).style.display = 'block';
+        }
+        function fecharModal(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
 </body>
-</html><
+
+</html>
